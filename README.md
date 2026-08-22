@@ -20,7 +20,7 @@ KContext Service
 и интеграционного слоя.
 
 ---
-Snapshot 01 — Object Foundation
+### Snapshot 01 — Object Foundation
 
 Дата: 2026-08-12
 
@@ -36,6 +36,27 @@ Snapshot 01 — Object Foundation
 KAnchor → KObject → KObjectAttributes → KAttribute
 
 ---
+
+### Snapshot 02 — Object Context
+
+Расширяем объектную модель контекстом, связанным с объектом.
+
+Добавлены::
+
+- KContext
+- object context ownership
+- context lifecycle
+- the relationship between KObject and KContext
+- the separation between object identity and its administrative context
+
+---
+### Releases
+
+- [Snapshot 01](../../releases/tag/snapshot-01)
+- [Snapshot 02 — Object Context](../../releases/tag/snapshot-02-object-context)
+
+---
+
 Ограничения
 
 - Может не компилироваться. Зависимости могут быть не определены.
