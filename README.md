@@ -106,7 +106,7 @@ No infrastructure, migrations, config, tests, or integration layer here.
 
 ---
 
-Snapshot 01 — Object Foundation
+### Snapshot 01 — Object Foundation
 
 Date: 2026-08-12
 
@@ -120,6 +120,20 @@ Basic object model:
 The core idea is separating the object itself from what's known about it:
 
 KAnchor → KObject → KObjectAttributes → KAttribute
+
+---
+
+### Snapshot 02 — Object Context
+
+Expanding the object model with a context associated with the object.
+
+Added:
+
+KContext
+object context ownership
+context lifecycle
+the relationship between KObject and KContext
+the separation between object identity and its administrative context
 
 ---
 
