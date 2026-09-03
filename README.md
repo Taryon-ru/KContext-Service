@@ -1,4 +1,4 @@
-KContext Service
+# KContext Service
 
 Фрагменты реализации KContext Service — части платформы Constructum
 (название платформы не придумано, пока),
@@ -10,7 +10,8 @@ KContext Service
 Репозиторий книги: https://github.com/Taryon-ru/from-object-to-system
 
 ---
-О репозитории
+
+## О репозитории
 
 Здесь опубликованы отдельные фрагменты реального кода KContext Service.
 Цель — показать, как идеи из книги реализуются в конкретных классах.
@@ -20,6 +21,7 @@ KContext Service
 и интеграционного слоя.
 
 ---
+
 ### Snapshot 01 — Object Foundation
 
 Дата: 2026-08-12
@@ -41,7 +43,7 @@ KAnchor → KObject → KObjectAttributes → KAttribute
 
 Расширяем объектную модель контекстом, связанным с объектом.
 
-Добавлены::
+Добавлены:
 
 - KContext
 - object context ownership
@@ -50,14 +52,36 @@ KAnchor → KObject → KObjectAttributes → KAttribute
 - the separation between object identity and its administrative context
 
 ---
+
+### Snapshot 03 — Entity
+
+Расширяем модель конкретными доменными сущностями.
+
+Добавлены:
+
+- KUser
+- AKUserLogin
+- AKUserFirstName
+- KGroup
+- AKGroupName
+- AKGroupParent
+- KProject
+- AKProjectName
+
+Snapshot показывает, как базовая объектная модель применяется
+для представления конкретных доменных объектов и их атрибутов.
+
+---
+
 ### Releases
 
 - [Snapshot 01](../../releases/tag/snapshot-01)
 - [Snapshot 02 — Object Context](../../releases/tag/snapshot-02-object-context)
+- [Snapshot 03 — Entity](../../releases/tag/snapshot-03-entity)
 
 ---
 
-Ограничения
+## Ограничения
 
 - Может не компилироваться. Зависимости могут быть не определены.
 - Состав кода может отличаться от версии к версии.
@@ -65,7 +89,8 @@ KAnchor → KObject → KObjectAttributes → KAttribute
 - Поддержка и сопровождение не ведутся (ну, или почти).
 
 ---
-Лицензия
+
+## Лицензия
 
 Не предназначено для production-использования. Не поддерживается
 как самостоятельный продукт или reference-реализация.
@@ -76,13 +101,13 @@ https://polyformproject.org/licenses/noncommercial/1.0.0
 Коммерческое использование — по отдельному соглашению
 с правообладателем. Подробности в LICENSE.
 
-Copyright © 2026 
+Copyright © 2026
 
 ---
 
-In English
+# In English
 
-KContext Service
+## KContext Service
 
 Fragments of the KContext Service implementation — part of the
 Constructum platform (platform name still in the works), which handles
@@ -96,7 +121,7 @@ Book repository: https://github.com/Taryon-ru/from-object-to-system
 
 ---
 
-About
+## About
 
 This repo contains fragments of the actual KContext Service code.
 The idea is to show how the book's concepts end up in real classes.
@@ -129,15 +154,43 @@ Expanding the object model with a context associated with the object.
 
 Added:
 
-KContext
-object context ownership
-context lifecycle
-the relationship between KObject and KContext
-the separation between object identity and its administrative context
+- KContext
+- object context ownership
+- context lifecycle
+- the relationship between KObject and KContext
+- the separation between object identity and its administrative context
 
 ---
 
-Limitations
+### Snapshot 03 — Entity
+
+Extending the model with concrete domain entities.
+
+Added:
+
+- KUser
+- AKUserLogin
+- AKUserFirstName
+- KGroup
+- AKGroupName
+- AKGroupParent
+- KProject
+- AKProjectName
+
+The snapshot shows how the basic object model is applied
+to concrete domain objects and their attributes.
+
+---
+
+### Releases
+
+- [Snapshot 01](../../releases/tag/snapshot-01)
+- [Snapshot 02 — Object Context](../../releases/tag/snapshot-02-object-context)
+- [Snapshot 03 — Entity](../../releases/tag/snapshot-03-entity)
+
+---
+
+## Limitations
 
 - May not compile. Dependencies may be unresolved.
 - Code composition may vary between versions.
@@ -146,7 +199,7 @@ Limitations
 
 ---
 
-License
+## License
 
 Not meant for production use. Not maintained as a standalone product
 or reference implementation.
@@ -157,4 +210,4 @@ https://polyformproject.org/licenses/noncommercial/1.0.0
 Commercial use requires a separate agreement with the copyright holder.
 See LICENSE for details.
 
-Copyright © 2026 
+Copyright © 2026
