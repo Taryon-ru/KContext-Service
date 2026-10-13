@@ -2,14 +2,19 @@
 
 # KContext Service
 
-Фрагменты реализации KContext Service — части платформы Constructum
-(название платформы не придумано, пока),
+Фрагменты реализации KContext Service — части платформы Constructum,
 отвечающей за контекст и управление доменными объектами.
 
-Репозиторий иллюстрирует книгу «От объекта к системе»:
+Репозиторий иллюстрирует книги:
+«От объекта к системе»
 Как модель реального мира определяет архитектуру цифровых платформ.
+«От объекта к контексту»
+Как право доступа становится отношением, а не свойством роли
 
-Репозиторий книги: https://github.com/Taryon-ru/from-object-to-system
+Репозитории: 
+https://github.com/Taryon-ru/from-object-to-system
+
+https://github.com/Taryon-ru/from-object-to-context
 
 ---
 
@@ -167,12 +172,35 @@ KUser ← KLinkUserGroup → KGroup
 
 ---
 
+### Snaphot 05 — Publication & Grant
+Расширяем модель публикациями и грантами для управления скоупом доступа.
+
+Добавлены:
+
+- KPublication
+- KPublicationAttributes
+- AKPublicationClosedBy-
+- KPublish
+- AKPublishScope
+- AKPublishPermission
+- KGrant
+- AKGranteeCompany
+- AKGrantPermission
+
+Snapshot разделяет два понятия:
+**Publication** — описывает скоуп публикации и связанные с ним разрешения;
+**Grant** — описывает разрешения, предоставленные компании-получателю.
+Это позволяет гибко управлять тем, кто и на каких условиях получает доступ к опубликованному контенту.
+
+---
+
 ### Releases
 
 * [Snapshot 01](../../releases/tag/snapshot-01)
 * [Snapshot 02 — Object Context](../../releases/tag/snapshot-02-object-context)
 * [Snapshot 03 — Entity](../../releases/tag/snapshot-03-entity)
 * [Snapshot 04 — Link](../../releases/tag/snapshot-04-link)
+* [Snapshot 05 — Publication & Grant](../../releases/tag/snapshot-05-publication-grant)
 
 ---
 
@@ -205,14 +233,18 @@ Copyright © 2026
 ## KContext Service
 
 Fragments of the KContext Service implementation — part of the
-Constructum platform (platform name still in the works), which handles
+Constructum platform, which handles
 context and governance of domain objects.
 
-This repository illustrates the book "From Object to System":
-How a model of the real world determines the architecture
-of digital platforms.
+This repository illustrates the books:
+"From Object to System"
+How a model of the real world determines the architecture of digital platforms.
+"From Object to Context"
+How an access right becomes a relationship instead of a property of a role.
 
-Book repository: [https://github.com/Taryon-ru/from-object-to-system](https://github.com/Taryon-ru/from-object-to-system)
+Books repository:
+[https://github.com/Taryon-ru/from-object-to-system](https://github.com/Taryon-ru/from-object-to-system)
+[https://github.com/Taryon-ru/from-object-to-context](https://github.com/Taryon-ru/from-object-to-context)
 
 ---
 
@@ -370,12 +402,35 @@ relationship remains independent of the relationship itself.
 
 ---
 
+### Snapshot 05 — Publication & Grant
+Extending the model with publications and grants to manage the access scope.
+
+Added:
+
+- KPublication
+- KPublicationAttributes
+- AKPublicationClosedBy
+- KPublish
+- AKPublishScope
+- AKPublishPermission
+- KGrant
+- AKGranteeCompany
+- AKGrantPermission
+
+The snapshot distinguishes two concepts:
+**Publication** — describes the publication scope and associated permissions;
+**Grant** — describes permissions granted to a recipient company
+This allows flexible management of who gets access to the published contentand under what conditions.
+
+---
+
 ### Releases
 
 * [Snapshot 01](../../releases/tag/snapshot-01)
 * [Snapshot 02 — Object Context](../../releases/tag/snapshot-02-object-context)
 * [Snapshot 03 — Entity](../../releases/tag/snapshot-03-entity)
 * [Snapshot 04 — Link](../../releases/tag/snapshot-04-link)
+* [Snapshot 05 — Publication & Grant](../../releases/tag/snapshot-05-publication-grant)
 
 ---
 
